@@ -1,9 +1,10 @@
 #!/usr/bin/env playonlinux-bash
-# Date : (2015-08-18 03-02)
-# Last revision : (2015-08-19 01-42)
+# Date : (2015-08-18)
+# Last revision : (2015-08-19 03:42)
 # Wine version used : 1.7.47
-# Distribution used to test : Xubuntu 14.04
-# Author : rolandoislas
+# Distribution used to test : Xubuntu 14.04, OS X 10.9
+# Licence : GPLv3
+# Author : Rolando Islas
 
 [ "$PLAYONLINUX" = "" ] && exit 0
 source "$PLAYONLINUX/lib/sources"
@@ -15,24 +16,24 @@ WINEVERSION="1.7.47"
 POL_SetupWindow_Init
 POL_Debug_Init
 
-POL_SetupWindow_presentation "$TITLE" "Hi-Rez Studios" "http://www.smitegame.com/" "rolandoislas" "Smite"
+POL_SetupWindow_presentation "$TITLE" "Hi-Rez Studios" "http://www.smitegame.com/" "Rolando Islas" "Smite"
 
 POL_SetupWindow_InstallMethod "DOWNLOAD,LOCAL"
 
 if [ "$INSTALL_METHOD" = "LOCAL" ]; then
-    cd "$HOME"
-    POL_SetupWindow_browse "$(eval_gettext 'Please select the setup file to run.')" "$TITLE" "" "Windows Executables (*.exe)|*.exe;*.EXE"
-    FULL_INSTALLER="$APP_ANSWER"
+	cd "$HOME"
+	POL_SetupWindow_browse "$(eval_gettext 'Please select the setup file to run.')" "$TITLE" "" "Windows Executables (*.exe)|*.exe;*.EXE"
+	FULL_INSTALLER="$APP_ANSWER"
 else
-   POL_System_TmpCreate "$PREFIX"
+	POL_System_TmpCreate "$PREFIX"
  
-    DOWNLOAD_URL="http://hirez.http.internapcdn.net/hirez/InstallSmite.exe"
-    DOWNLOAD_MD5="70c865599331410ae8bbcf7d7f74ecbb"
-    DOWNLOAD_FILE="$POL_System_TmpDir/$(basename "$DOWNLOAD_URL")"
+	DOWNLOAD_URL="http://hirez.http.internapcdn.net/hirez/InstallSmite.exe"
+	DOWNLOAD_MD5="70c865599331410ae8bbcf7d7f74ecbb"
+	DOWNLOAD_FILE="$POL_System_TmpDir/$(basename "$DOWNLOAD_URL")"
  
-    POL_Call POL_Download_retry "$DOWNLOAD_URL" "$DOWNLOAD_FILE" "$DOWNLOAD_MD5" "$TITLE installer"
+	POL_Call POL_Download_retry "$DOWNLOAD_URL" "$DOWNLOAD_FILE" "$DOWNLOAD_MD5" "$TITLE installer"
  
-    FULL_INSTALLER="$DOWNLOAD_FILE"
+	FULL_INSTALLER="$DOWNLOAD_FILE"
 fi
 
 POL_System_SetArch "x86"
@@ -66,7 +67,7 @@ POL_Call POL_Function_OverrideDLL builtin,native dnsapi
 POL_Shortcut "HiRezLauncherUI.exe" "$TITLE" "" "game=300 product=17"
 
 if [ "$INSTALL_METHOD" = "DOWNLOAD" ]; then
-    POL_System_TmpDelete
+	POL_System_TmpDelete
 fi
 
 POL_SetupWindow_Close
