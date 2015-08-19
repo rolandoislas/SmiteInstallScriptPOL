@@ -1,8 +1,8 @@
 #!/usr/bin/env playonlinux-bash
 # Date : (2015-08-18 03-02)
-# Last revision : (2015-08-18 03-02)
+# Last revision : (2015-08-19 01-42)
 # Wine version used : 1.7.47
-# Distribution used to test : Ubuntu 14.10
+# Distribution used to test : Xubuntu 14.04
 # Author : rolandoislas
 
 [ "$PLAYONLINUX" = "" ] && exit 0
@@ -60,7 +60,7 @@ Set_OS "win7"
 POL_Wine_WaitBefore "$TITLE"
 POL_Wine "$FULL_INSTALLER"
 
-Set_OS winxp
+Set_OS "winxp"
 
 POL_Call POL_Function_OverrideDLL builtin,native dnsapi
 POL_Shortcut "HiRezLauncherUI.exe" "$TITLE" "" "game=300 product=17"
