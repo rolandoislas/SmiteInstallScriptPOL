@@ -1,6 +1,7 @@
 #!/bin/bash
+# A utilities script that aids in the editing of SMITE setting without being in game.
 # Date : (2015-10-08)
-# Last revision : (2015-10-08 3:42)
+# Last revision : (2015-10-08 3:50)
 # Licence : GPLv3
 # Author : Rolando Islas
 

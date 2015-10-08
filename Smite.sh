@@ -1,6 +1,7 @@
 #!/usr/bin/env playonlinux-bash
+# A PlayOnLinux/Mac install script for SMITE.
 # Date : (2015-08-18)
-# Last revision : (2015-10-07 05:25)
+# Last revision : (2015-10-08 03:50)
 # Wine version used : 1.7.47
 # Distribution used to test : Xubuntu 14.04, OS X 10.11
 # Licence : GPLv3
