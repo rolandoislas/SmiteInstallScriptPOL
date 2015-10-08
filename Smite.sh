@@ -1,8 +1,8 @@
 #!/usr/bin/env playonlinux-bash
 # Date : (2015-08-18)
-# Last revision : (2015-08-19 03:42)
+# Last revision : (2015-10-07 05:25)
 # Wine version used : 1.7.47
-# Distribution used to test : Xubuntu 14.04, OS X 10.9
+# Distribution used to test : Xubuntu 14.04, OS X 10.11
 # Licence : GPLv3
 # Author : Rolando Islas
 
@@ -28,7 +28,7 @@ else
 	POL_System_TmpCreate "$PREFIX"
  
 	DOWNLOAD_URL="http://hirez.http.internapcdn.net/hirez/InstallSmite.exe"
-	DOWNLOAD_MD5="70c865599331410ae8bbcf7d7f74ecbb"
+	DOWNLOAD_MD5="e35f14fda81d910a7407c7fc2e19212b"
 	DOWNLOAD_FILE="$POL_System_TmpDir/$(basename "$DOWNLOAD_URL")"
  
 	POL_Call POL_Download_retry "$DOWNLOAD_URL" "$DOWNLOAD_FILE" "$DOWNLOAD_MD5" "$TITLE installer"
