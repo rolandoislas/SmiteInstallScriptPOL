@@ -29,7 +29,7 @@ else
 	POL_System_TmpCreate "$PREFIX"
  
 	DOWNLOAD_URL="http://hirez.http.internapcdn.net/hirez/InstallSmite.exe"
-	DOWNLOAD_MD5="e35f14fda81d910a7407c7fc2e19212b"
+	DOWNLOAD_MD5="9cdc39efb3c26e5d10b023d5a015ff7e"
 	DOWNLOAD_FILE="$POL_System_TmpDir/$(basename "$DOWNLOAD_URL")"
  
 	POL_Call POL_Download_retry "$DOWNLOAD_URL" "$DOWNLOAD_FILE" "$DOWNLOAD_MD5" "$TITLE installer"
