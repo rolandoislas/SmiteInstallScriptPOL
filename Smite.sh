@@ -1,9 +1,9 @@
 #!/usr/bin/env playonlinux-bash
 # A PlayOnLinux/Mac install script for SMITE.
 # Date : (2015-08-18)
-# Last revision : (2015-10-08 03:50)
-# Wine version used : 1.7.47
-# Distribution used to test : Xubuntu 14.04, OS X 10.11
+# Last revision : (2016-02-12 03:38)
+# Wine version used : 1.8.1
+# Distribution used to test : OS X 10.11.2
 # Licence : GPLv3
 # Author : Rolando Islas
 
@@ -12,7 +12,7 @@ source "$PLAYONLINUX/lib/sources"
 
 TITLE="SMITE"
 PREFIX="Smite"
-WINEVERSION="1.7.47"
+WINEVERSION="1.8.1"
  
 POL_SetupWindow_Init
 POL_Debug_Init
