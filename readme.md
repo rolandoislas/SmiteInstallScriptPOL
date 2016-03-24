@@ -5,8 +5,10 @@ This is a mostly automated script for [PlayOnMac/PlayOnLinux] that will install 
 
 ##Required on Linux
 
-echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
-or manual set
+"echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope"
+
+Or Manually
+
 "kernel.yama.ptrace_scope = 0" in /etc/sysctl.d/10-ptrace.conf
 
 ["More Information about"]
