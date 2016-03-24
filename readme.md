@@ -3,6 +3,15 @@ Smite Install Script - PlayOnLinux/PlayOnMac
 
 This is a mostly automated script for [PlayOnMac/PlayOnLinux] that will install [Smite].
 
+##Required on Linux
+
+echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
+or manual set
+"kernel.yama.ptrace_scope = 0" in /etc/sysctl.d/10-ptrace.conf
+
+["More Information about"]
+
+
 ## Install
 
 * Be sure to have [PlayOnMac/PlayOnLinux] installed.
@@ -29,3 +38,4 @@ OS X users can use [`Mac Resolution Edit.command`](./Mac%20Resolution%20Edit.com
 [PlayOnMac/PlayOnLinux]: https://www.playonlinux.com
 [Smite]: http://www.smitegame.com
 [installer]: http://hirez.http.internapcdn.net/hirez/InstallSmite.exe
+["More Information about"]: https://www.playonlinux.com/en/topic-10534-Regarding_ptrace_scope_fatal_error.html
