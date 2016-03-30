@@ -9,6 +9,11 @@ This is a mostly automated script for [PlayOnMac/PlayOnLinux] that will install 
 * From the `Tools` menu choose `Run a Local Script` and select [`Smite.sh`](./Smite.sh).
 * Follow the install instructions.
 
+###### Launcher Update Loop
+The launcher seems to need access to the terminal for it to properly update. The script ensure that the `TERM` environmental variable is set.
+
+During the install you will be prompted for the system terminal (xterm default). If you are unsure of your current terminal go with the default and install xterm before launching Smite. Others, such as gnome-terminal, have been tested and failied to operate properly. This results in the launcher not being able to update.
+
 ###### Note: The auto-download is unreliable due to the installer executable/checksum changing occasionally. It is recommended to download the [installer] separately and choose to install via the local option.
 
 ## Post-Install
