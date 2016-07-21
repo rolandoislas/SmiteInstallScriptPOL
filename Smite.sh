@@ -30,7 +30,7 @@ elif [ "$INSTALL_METHOD" = "DOWNLOAD" ]; then
 	POL_System_TmpCreate "$PREFIX"
  
 	DOWNLOAD_URL="http://hirez.http.internapcdn.net/hirez/InstallSmite.exe"
-	DOWNLOAD_MD5="e740a724c0354205330c172409b8df2a"
+	DOWNLOAD_MD5="5b7e0574a48b2550561d8bd8121e92a1"
 	DOWNLOAD_FILE="$POL_System_TmpDir/$(basename "$DOWNLOAD_URL")"
  
 	POL_Call POL_Download_retry "$DOWNLOAD_URL" "$DOWNLOAD_FILE" "$DOWNLOAD_MD5" "$TITLE installer"
@@ -56,7 +56,6 @@ POL_Call POL_Install_d3dx9_43
 POL_Call POL_Install_directx9
 POL_Call POL_Install_dotnet35sp1
 POL_Call POL_Install_dotnet40
-POL_Call POL_Install_flashplayer
 POL_Call POL_Install_gdiplus
 POL_Call POL_Install_vcrun2008
 POL_Call POL_Install_vcrun2010
