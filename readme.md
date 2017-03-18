@@ -1,6 +1,8 @@
 Smite Install Script - PlayOnLinux/PlayOnMac
 ---
 
+See [Translator5/PlayOnLinux-InstallScripts](https://github.com/Translator5/PlayOnLinux-InstallScripts) for an updated install script.
+
 This is a mostly automated script for [PlayOnMac/PlayOnLinux] that will install [Smite].
 
 ## Install
